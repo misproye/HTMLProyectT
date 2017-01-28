@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Pagina de prueba</title>
+		<script type = "text/javascript"  src = "JavaScript/getdata.js"></script>
+		<script type = "text/javascript"  src = "JsBarcode/JsBarcode-master/dist/JsBarcode.all.js"></script>
+		
+	</head>
+	<body>
+
+		<h1>Codigo de Barras Iphone</h1>
+	
+		<script type="text/javascript">
+		
+			var get = obtenDatos();
+
+				
+
+			var newname = get.nombre.replace(/[+]/g, " ");
+			
+			var newlastname = get.apellido.replace(/[+]/g," ");
+
+			var newadress = get.adress.replace(/[+]/g," ");
+
+			var newcol = get.col.replace(/[+]/g," ");
+
+		</script>
+
+		<div>
+			<img id = "name"/>
+			<script>JsBarcode("#name",newname,{ format: "CODE128", fontSize:14, width:1 , height:30 });</script>
+		</div>
+		<div>
+			<img id="lastname"/>
+			<script>JsBarcode("#lastname",newlastname, { format: "CODE128", fontSize:14, width:1, height:30}); </script>
+		</div>
+		<div>
+			<img id="phone"/>
+			<script>JsBarcode("#phone",get.telefono, { format: "CODE128", fontSize:14, width:1, height:30}); </script>
+		</div>
+
+		<div>
+			<img id="imeifail"/>
+			<script>JsBarcode("#imeifail",get.imeidamage, { format: "CODE128", fontSize:14, width:1, height:30}); </script>
+		</div>
+
+		<div>
+			<img id="email"/>
+			<script>JsBarcode("#email",get.email, { format: "CODE128", fontSize:14, width:1, height:30}); </script>
+		</div>
+
+		<div>
+			<img id="adress"/>
+			<script>JsBarcode("#adress",newadress, { format: "CODE128", fontSize:14, width:1, height:35}); </script>
+		</div>
+
+		<div>
+			<img id="col"/>
+			<script>JsBarcode("#col",newcol, { format: "CODE39", fontSize:14, width:1, height:30}); </script>
+		</div>
+
+		<div>
+			<img id="municipio"/>
+			<script>JsBarcode("#municipio",get.mun, { format: "CODE39", fontSize:14, width:1, height:30}); </script>
+		</div>
+
+		<div>
+			<img id="estado"/>
+			<script>JsBarcode("#estado",get.opciones, { format: "CODE39", fontSize:14, width:1, height:30}); </script>
+		</div>
+
+		<div>
+			<img id="cp"/>
+			<script>JsBarcode("#cp",get.codigo, { format: "CODE39", fontSize:14, width:1, height:30}); </script>
+		</div>
+
+		<div>
+			<img id="folio"/>
+			<script>JsBarcode("#folio",get.sertec, { format: "CODE39", fontSize:14, width:1, height:30}); </script>
+		</div>
+
+		<div>
+			<img id="factura"/>
+			<script>JsBarcode("#factura",get.nota, { format: "CODE39", fontSize:14, width:1, height:30}); </script>
+		</div>
+
+		<div>
+			<img id="imeinew"/>
+			<script>JsBarcode("#imeinew",get.nuevo, { format: "CODE39", fontSize:14, width:1, height:30}); </script>
+		</div>
+	
+	</body>
+</html>

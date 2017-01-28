@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+			<link rel="stylesheet" type="text/css" href="CSS/opensans_light_macroman/stylesheet.css"  charset="utf-8" />
+			<script type="text/javascript" src = "JavaScript/logic.js"></script>
+			<script type="text/javascript" src = "JavaScript/generateBarcode.js"></script>
+			<title>Codigo de Barras para Iphone NEW</title>
+			<!--asi se ponen comentarios en HTML-->
+		</head>
+		<body>
+			<form name = "formulariodeprueba" action="pagina2.html" >
+				
+				<header id="titulo">
+					<h1>Generador web de Codigo de barras Iphone</h1>
+				</header>
+
+				<img  id="apple"   src="image/iphone2.jpg">
+				<img  id="logo"  src="image/Logotipo-Telcel-4G.jpg">
+
+				<section id = "main-content" > 
+					
+					<article>
+						
+						<br><legend >Introduce los datos del Cliente</legend><br>
+
+						<div class="contet" >
+							
+							<input autofocus id="nombre" name="nombre" placeholder="Escribe el nombre completo" size="22"  type="text" title="Ingresa el nombre" required /><br>
+								
+									
+							<input id="apellido" name="apellido" placeholder="Apellidos del cliente" size="22" type="text" title="Ingresa el apellido" required  /><br>
+								
+								
+									
+							<input id="telefono" maxlength="10" name="telefono" onkeypress="return valida(event)"  placeholder="Numero Telefonico del cliente" size="22" type="tel" title="Ingresa un numero telefonico" required /><br>
+								
+									
+							<input id="imei" name="imeidamage" maxlength="15" onkeypress="return valida(event)"  placeholder="IMEI Dañado" 
+							size="22" type="number" title="Ingresa el IMEI del equipo dañado" required  /><br>
+								
+									
+							<input id="correo" name="email" placeholder="Correo electronico del cliente" size="22" title="Ingresa el mail del cliente" type="email" required ><br>
+									
+							<input id="direccion" name="adress"  placeholder="Domicilio" size="22" title="Ingresa el Domicilio" type="text" required>
+							<br>
+								
+									
+							<input  id="colonia" name="col"  placeholder="Colonia" size="22" title="Ingresa al colonia" type="text"  required><br>
+								
+									
+							<input id="municipio" name="mun"  placeholder="Municipio" size="22" title="Ingresa el municipio" type="text" required><br>
+								
+								
+							<label>Elije el estado:</label> 
+								
+								<select id = "estado" name = "opciones" required>
+									<option value="Aguascalientes">Aguascalientes</option>
+									<option value="BajaCalifornia">Baja California</option>
+									<option value="BajaCaliforniaSur">Baja California Sur</option>
+									<option value="Campeche">Campeche</option>
+									<option value="Chiapas">Chiapas</option>
+									<option value="Chihuahua">Chihuahua</option>
+									<option value="Coahuila">Coahuila</option>
+									<option value="Colima">Colima</option>
+									<option value="Durango">Durango</option>
+									<option value="EstadodeMéxico">Estado de México</option>
+									<option value="Guanajuato">Guanajuato</option>
+									<option value="Guerrero">Guerrero</option>
+									<option value="Hidalgo">Hidalgo</option>
+									<option value="Jalisco">Jalisco</option>
+									<option value="Michoacán">Michoacán</option>
+									<option value="Morelos">Morelos</option>
+									<option value="Nayarit">Nayarit</option>
+									<option value="NuevoLeón">Nuevo León</option>
+									<option value="Oaxaca">Oaxaca</option>
+									<option value="Puebla">Puebla</option>
+									<option value="Querétaro">Querétaro</option>
+									<option value="QuintanaRoo">Quintana Roo</option>
+									<option value="SanLuisPotosí">San Luis Potosí</option>
+									<option value="Sinaloa">Sinaloa</option>
+									<option value="Sonora">Sonora</option>
+									<option value="Tabasco">Tabasco</option>
+									<option value="Tamaulipas">Tamaulipas</option>
+									<option value="Tlaxcala">Tlaxcala</option>
+									<option value="Veracruz">Veracruz</option>
+									<option value="Yucatán">Yucatán</option>
+									<option value="Zacatecas">Zacatecas</option>
+								</select>
+								
+									
+							<br><input id="codigopostal" maxlength="5" name="codigo" onkeypress="return valida(event)" placeholder="Codigo Postal" size="22" type="text" title="Ingresa el codigo postal" required><br>
+								
+								
+									
+							<input id="foliosertec" name="sertec"  placeholder="Folio Sertec" size="22" type="text" title="Ingresa el Folio SERTEC" required><br>
+								
+									
+							<input id="factura" name="nota" onkeypress="return valida(event)"  placeholder="Factura SAP" size="22" type="number" 
+							title="Ingresa el numero de factura SAP" required><br>
+								
+									
+							<input id="imeinuevo" name="nuevo" onkeypress="return valida(event)" placeholder="IMEI seedstock" size="30" type="number" title="Ingresa el IMEI nuevo" required><br>
+
+						</div>
+							
+						<br><button type="submit" id="submit" name="boton" value="Generar">Generar codigo de barras </button>
+						<button type="reset" id="submit" name="botonlimpiar" value="limpiar"> Limpiar fomulario</button>	
+					</article>		
+
+				</section>
+
+
+
+			</form>
+		</body>
+	</html>
