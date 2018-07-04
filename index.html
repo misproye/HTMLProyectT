@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title>Lista de productos</title>
+      <!-- Kendo UI CSS para web widgets y widgets para la vizualicacion de datos-->
+      <link href="styles/kendo.common.min.css" rel="stylesheet" />
+      <!-- Default Kendo UI temas CSS para web widgets y widgets para la vizualicacion de datos -->
+      <link href="styles/kendo.default.min.css" rel="stylesheet" />
+      <!-- jQuery JavaScript -->
+      <script src="js/jquery.min.js"></script>
+      <!-- Kendo UI  JavaScript -->
+      <script src="js/kendo.all.min.js"></script>
+      <!--ruta del sript de control de la pagina-->
+      <script src="scripts/script.js"></script>
+      <!--rutas para los estilos-->
+      <link rel="stylesheet" href="estilos/estilos.css">
+      <link rel="stylesheet" href="estilos/normalize.css">
+  </head>
+  <body>
+
+    <h1>Clothes Store</h1>
+
+    <div class="busqueda" >
+
+      <h4>Select product name</h4>
+
+      <input type="text" id="search" placeholder="Search">
+
+    </div>
+
+    <div id="listView" style="max-height:400px;overflow:auto;"></div>
+
+    <script type="text/x-kendo-tmpl" id="template">
+
+      <div class = "product-view k-widget">
+
+          <dl>
+
+               <dt>Product id</dt>
+
+               <dd>#:Id#</dd>
+
+               <dt>Nombre</dt>
+
+               <dd>#:Name#</dd>
+
+               <dt>Categoria</dt>
+
+               <dd>#:Category#</dd>
+
+               <dt>Stock</dt>
+
+               <dd>#:Stock#</dd>
+
+               <dt>Precio</dt>
+
+               <dd>#:Price#</dd>
+
+          </div>
+      </script>
+    </body>
+</html>
